@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const overlayTitle = document.getElementById("overlay-title");
     const overlayDesc = document.getElementById("overlay-description");
     const overlayImage = document.getElementById("overlay-image");
+    const helpBtn = document.getElementById('helpBtn');
+    const helpOverlay = document.getElementById('helpOverlay');
+    const closeHelp = document.getElementById('closeHelp');
 
     console.log("JavaScript Connected!");
 
@@ -57,6 +60,17 @@ document.addEventListener("DOMContentLoaded", () => {
         return null;
     }
 
+    //HELP BUTTONNN
+
+    helpBtn.addEventListener('click', () => {
+        helpOverlay.style.display = 'flex';
+      });
+      
+      closeHelp.addEventListener('click', () => {
+        helpOverlay.style.display = 'none';
+      });
+
+      
     //overlay with audio player
     function showOverlay(song, zodiac) {
         audioPlayer.pause();
