@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kendrick Zodiac Album</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <form id="zodiac-form">
+    <label for="birthdate">Select Your Birthday:</label>
+    <input type="date" id="birthdate" required>
+    <button type="submit">Get Your Kendrick Song</button>
+  </form>
+
+
+  <div id="album-result"></div>
+
+  <div class="container">
+    <div class="album-container" data-zodiac="Capricorn">
+        <img src="images/heartpt6.jpg" alt="Album Cover" class="album-image">
+        <h1 class="album-title">heart pt.6</h1>
+        <h2 class="album-artist">Kendrick Lamar</h2>
+      </div>
+    
+      <div class="album-container" data-zodiac="Sagittarius">
+        <img src="images/wacced.jpg" alt="Album Cover" class="album-image">
+        <h1 class="album-title">wacced out murals</h1>
+        <h2 class="album-artist">Kendrick Lamar</h2>
+      </div>
+    
+      <div class="album-container" data-zodiac="Scorpio">
+        <img src="images/squabbleup.jpg" alt="Album Cover" class="album-image">
+        <h1 class="album-title">squabble up</h1>
+        <h2 class="album-artist">Kendrick Lamar</h2>
+      </div>
+    
+      <div class="album-container" data-zodiac="Libra">
+        <img src="images/luther.jpg" alt="Album Cover" class="album-image">
+        <h1 class="album-title">luther (with sza)</h1>
+        <h2 class="album-artist">Kendrick Lamar, SZA</h2>
+      </div>
+    
+      <div class="album-container" data-zodiac="Virgo">
+        <img src="images/garden.jpg" alt="Album Cover" class="album-image">
+        <h1 class="album-title">man at the garden</h1>
+        <h2 class="album-artist">Kendrick Lamar</h2>
+      </div>
+    
+      <div class="album-container" data-zodiac="Leo">
+        <img src="images/heynow.jpg" alt="Album Cover" class="album-image">
+        <h1 class="album-title">hey now (feat. dody6)</h1>
+        <h2 class="album-artist">Kendrick Lamar, Dody6</h2>
+      </div>
+    
+      <div class="album-container" data-zodiac="Cancer">
+        <img src="images/reincarnated.jpg" alt="Album Cover" class="album-image">
+        <h1 class="album-title">reincarnated</h1>
+        <h2 class="album-artist">Kendrick Lamar</h2>
+      </div>
+    
+      <div class="album-container" data-zodiac="Gemini">
+        <img src="images/tvoff.jpg" alt="Album Cover" class="album-image">
+        <h1 class="album-title">tv off (feat. lefty gunplay)</h1>
+        <h2 class="album-artist">Kendrick Lamar, Lefty Gunplay</h2>
+      </div>
+    
+      <div class="album-container" data-zodiac="Taurus">
+        <img src="images/dodgerblue.jpg" alt="Album Cover" class="album-image">
+        <h1 class="album-title">dodger blue (feat. wallie)</h1>
+        <h2 class="album-artist">Kendrick Lamar, Wallie the Sensei</h2>
+      </div>
+    
+      <div class="album-container" data-zodiac="Aries">
+        <img src="images/peekaboo.jpg" alt="Album Cover" class="album-image">
+        <h1 class="album-title">peekaboo (feat. azchike)</h1>
+        <h2 class="album-artist">Kendrick Lamar, Az Chike</h2>
+      </div>
+    
+      <div class="album-container" data-zodiac="Pisces">
+        <img src="images/gnx.jpg" alt="Album Cover" class="album-image">
+        <h1 class="album-title">gnx (feat. hitta j3, youngthug)</h1>
+        <h2 class="album-artist">Kendrick Lamar, Hitta J3, YoungThug</h2>
+      </div>
+    
+      <div class="album-container" data-zodiac="Aquarius">
+        <img src="images/gloria.jpg" alt="Album Cover" class="album-image">
+        <h1 class="album-title">gloria (with sza)</h1>
+        <h2 class="album-artist">Kendrick Lamar, SZA</h2>
+      </div>
+  </div>
+
+  <!-- Redesigned Overlay -->
+  <div class="overlay" id="overlay">
+    <div class="overlay-content">
+      <span class="close-btn" id="close-btn">&times;</span>
+
+      <div class="overlay-album-info">
+        <div class="overlay-image-section">
+          <img id="overlay-image" src="" alt="Album Cover">
+        </div>
+
+        <div class="overlay-text-section">
+          <h2 id="overlay-title">Now Playing</h2>
+          <h3 id="overlay-artist"></h3>
+          <p id="overlay-description">Enjoy your music based on your zodiac sign.</p>
+        </div>
+      </div>
+
+      <audio id="audio-player" controls></audio>
+    </div>
+  </div>
+
+  <script src="zodiac.js"></script>
+</body>
+</html>
+
+
+
+
